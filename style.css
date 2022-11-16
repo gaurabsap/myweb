@@ -36,9 +36,20 @@ body {
     background-image: url('bgm-2.jpg');
     /* background-size: cover; */
     background-size: cover;
-    
 
 }
+.anime{
+    opacity: 0;
+    animation: ani 0.7s linear forwards;
+    transform: rotateY(100deg);
+}
+@keyframes ani {
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
 nav ul{
     display: flex;
     justify-content: end;
@@ -103,6 +114,8 @@ nav ul li a:hover::after{
     position: absolute;
     font-weight: 700;
 }
+
+
 .friend {
     display: block;
     position: absolute;
@@ -376,4 +389,24 @@ nav ul li a:hover::after{
     margin-top: 40px;
     background-color: #202020;
     border: 2px solid red;
+}
+
+.ani{
+    opacity: 0;
+    /* transform: translateY(30deg); */
+    /* transform: translateY(0deg); */
+    animation: anim 0.7s linear forwards;
+    /* transform: rotate(90deg); */
+
+}
+
+@keyframes anim {
+    100%{
+        opacity: 1;
+        /* transform: translateY(0deg); */
+        /* transform: rotate(0deg); */
+        transform: translateY(-10px);
+
+    }
+    
 }
